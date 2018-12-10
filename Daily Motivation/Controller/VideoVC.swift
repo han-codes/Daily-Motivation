@@ -10,7 +10,9 @@ import UIKit
 
 class VideoVC: UIViewController {
 
-    private(set) public var video = [Video]()
+    @IBOutlet weak var videoCollection: UICollectionView!
+    
+    private(set) public var videos = [Video]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,7 @@ class VideoVC: UIViewController {
     
 
     func initVideos(category: Category) {
-        video = DataService.instance.getVideos(forCategoryTitle: category.title)
+        videos = DataService.instance.getVideos(forCategoryTitle: category.title)
         navigationItem.title = category.title
     }
     
@@ -28,5 +30,24 @@ class VideoVC: UIViewController {
     @IBAction func videoTapped(_ sender: Any) {
         
     }
+    
+}
+
+extension VideoVC: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return videos.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoCell", for: indexPath) as? VideoCell {
+            let video = videos[indexPath.row]
+            cell.updateViews(video: video)
+            
+            return cell
+        }
+        
+        return VideoCell()
+    }
+    
     
 }
