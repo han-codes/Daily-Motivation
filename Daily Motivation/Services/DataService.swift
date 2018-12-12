@@ -19,11 +19,9 @@ class DataService {
     ]
     
     private let disciplineVideos = [
-        Video(creatorText: "Jocko Willink", imageName: "shirts.png", videoURL: "https://www.youtube.com/asdfasdf"),
-        Video(creatorText: "Will Smith", imageName: "hoodies.png", videoURL: "https://www.youtube.com/willsmith")
+        Video(creatorText: "Jocko Willink", imageName: "shirts.png", videoURL: "RmHqOSrkZnk"),
+        Video(creatorText: "Will Smith", imageName: "hoodies.png", videoURL: "RmHqOSrkZnk")
     ]
-    
-    
     
     func getCategories() -> [Category]{
         return categories
@@ -43,5 +41,3 @@ class DataService {
         return disciplineVideos
     }
 }
-//        Category(title: "Forgiveness", imageName: <#T##String#>),
-//        Category(title: "WHY", imageName: <#T##String#>)

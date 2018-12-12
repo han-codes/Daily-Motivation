@@ -18,17 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivation Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nZ-Sb-qIN">
-                                <rect key="frame" x="52.5" y="76" width="270" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="kre-cX-2Gh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1qd-OZ-ji1">
-                                <rect key="frame" x="0.0" y="132" width="375" height="535"/>
+                                <rect key="frame" x="0.0" y="129" width="375" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="93" id="r8H-P1-OXi" customClass="CategoryCell" customModule="Daily_Motivation" customModuleProvider="target">
@@ -67,16 +58,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivation Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nZ-Sb-qIN">
+                                <rect key="frame" x="52.5" y="79" width="270" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="Hra-Ft-3UO"/>
+                                    <constraint firstAttribute="height" constant="35" id="kre-cX-2Gh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8nZ-Sb-qIN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="1ao-g7-yRX"/>
-                            <constraint firstItem="1qd-OZ-ji1" firstAttribute="top" secondItem="8nZ-Sb-qIN" secondAttribute="bottom" constant="21" id="2Jr-dk-IB8"/>
                             <constraint firstItem="1qd-OZ-ji1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5LF-pI-KRx"/>
-                            <constraint firstItem="8nZ-Sb-qIN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52.5" id="Pv6-fy-UWl"/>
+                            <constraint firstItem="8nZ-Sb-qIN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8mk-Ue-eup"/>
                             <constraint firstItem="1qd-OZ-ji1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TRB-ga-BZJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1qd-OZ-ji1" secondAttribute="bottom" id="dDA-hI-BEI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8nZ-Sb-qIN" secondAttribute="trailing" constant="52.5" id="sKF-iz-lBk"/>
+                            <constraint firstItem="1qd-OZ-ji1" firstAttribute="top" secondItem="8nZ-Sb-qIN" secondAttribute="bottom" constant="15" id="n8V-k9-n5w"/>
+                            <constraint firstItem="8nZ-Sb-qIN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="p0T-md-l5s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -130,34 +130,28 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgv-J4-eAS">
-                                                    <rect key="frame" x="0.0" y="21" width="170" height="115"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <connections>
-                                                        <action selector="videoTapped:" destination="0SC-Oe-K9r" eventType="touchUpInside" id="8Va-rR-JoP"/>
-                                                    </connections>
-                                                </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tJ-Ma-Dxp">
-                                                    <rect key="frame" x="10" y="21" width="150" height="115"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="115" id="Z7z-YN-TJT"/>
-                                                        <constraint firstAttribute="width" constant="150" id="eOz-8h-0fQ"/>
-                                                    </constraints>
-                                                </imageView>
+                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffx-V5-spy">
+                                                    <rect key="frame" x="10" y="33" width="150" height="118"/>
+                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <wkWebViewConfiguration key="configuration">
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                </wkWebView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="5tJ-Ma-Dxp" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leading" constant="10" id="ETh-MY-lmk"/>
-                                            <constraint firstItem="wfg-l9-M5m" firstAttribute="top" secondItem="5tJ-Ma-Dxp" secondAttribute="bottom" constant="20" id="Exm-Ds-PYg"/>
-                                            <constraint firstAttribute="trailing" secondItem="5tJ-Ma-Dxp" secondAttribute="trailing" constant="10" id="PWJ-RF-2mN"/>
+                                            <constraint firstItem="Ffx-V5-spy" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leadingMargin" constant="2" id="1Wd-eB-0pD"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Ffx-V5-spy" secondAttribute="trailing" constant="2" id="9ge-ES-Adz"/>
+                                            <constraint firstItem="wfg-l9-M5m" firstAttribute="top" secondItem="Ffx-V5-spy" secondAttribute="bottom" constant="5" id="Dpf-pf-c8a"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="wfg-l9-M5m" secondAttribute="bottom" constant="10" id="Wa9-LM-dqI"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="wfg-l9-M5m" secondAttribute="trailing" id="YM2-tM-QYL"/>
                                             <constraint firstItem="wfg-l9-M5m" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leadingMargin" id="heA-v0-tQa"/>
+                                            <constraint firstItem="Ffx-V5-spy" firstAttribute="top" secondItem="i7R-er-qM9" secondAttribute="topMargin" constant="5" id="rdD-Bg-4vM"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="creatorLbl" destination="wfg-l9-M5m" id="W5G-yl-Lfx"/>
-                                            <outlet property="videoImage" destination="5tJ-Ma-Dxp" id="5zj-T7-xcz"/>
+                                            <outlet property="webView" destination="Ffx-V5-spy" id="baE-qJ-weh"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

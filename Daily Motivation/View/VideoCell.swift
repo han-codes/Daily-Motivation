@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import WebKit
 
 class VideoCell: UICollectionViewCell {
-    @IBOutlet weak var videoImage: UIImageView!
     @IBOutlet weak var creatorLbl: UILabel!
+    @IBOutlet weak var webView: WKWebView!
     
     func updateViews(video: Video) {
-        videoImage.image = UIImage(named: video.imageName)
         creatorLbl.text = video.creatorText
     }
 }
