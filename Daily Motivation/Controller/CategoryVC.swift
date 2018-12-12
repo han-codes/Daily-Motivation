@@ -44,11 +44,12 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
         performSegue(withIdentifier: TO_VIDEOVC, sender: category)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let videoVC = segue.destination as? VideoVC {
-//
-//            assert(sender as? Category != nil)
-//
-//        }
-//    }
+    // send category to be used in initVideos(category:) in VideoVC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let videoVC = segue.destination as? VideoVC {
+            
+            assert(sender as? Category != nil)
+            videoVC.initVideos(category: sender as! Category)
+        }
+    }
 }

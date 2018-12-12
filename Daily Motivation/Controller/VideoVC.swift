@@ -17,10 +17,13 @@ class VideoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // set CollectionView delegate and datasource
+        videoCollection.delegate = self
+        videoCollection.dataSource = self
     }
     
 
+    // gets the videos from Datasource 
     func initVideos(category: Category) {
         videos = DataService.instance.getVideos(forCategoryTitle: category.title)
         navigationItem.title = category.title

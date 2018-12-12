@@ -19,8 +19,8 @@ class DataService {
     ]
     
     private let disciplineVideos = [
-        Video(creatorText: "Jocko Willink", imageName: "image1", videoURL: "https://www.youtube.com/asdfasdf"),
-        Video(creatorText: "Will Smith", imageName: "image2", videoURL: "https://www.youtube.com/willsmith")
+        Video(creatorText: "Jocko Willink", imageName: "shirts.png", videoURL: "https://www.youtube.com/asdfasdf"),
+        Video(creatorText: "Will Smith", imageName: "hoodies.png", videoURL: "https://www.youtube.com/willsmith")
     ]
     
     

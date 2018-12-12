@@ -124,7 +124,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="195"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfg-l9-M5m">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfg-l9-M5m">
                                                     <rect key="frame" x="8" y="156" width="154" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -139,21 +139,21 @@
                                                     </connections>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tJ-Ma-Dxp">
-                                                    <rect key="frame" x="0.0" y="21" width="170" height="115"/>
+                                                    <rect key="frame" x="10" y="21" width="150" height="115"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="115" id="Z7z-YN-TJT"/>
-                                                        <constraint firstAttribute="width" constant="170" id="eOz-8h-0fQ"/>
+                                                        <constraint firstAttribute="width" constant="150" id="eOz-8h-0fQ"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="5tJ-Ma-Dxp" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leading" constant="10" id="ETh-MY-lmk"/>
                                             <constraint firstItem="wfg-l9-M5m" firstAttribute="top" secondItem="5tJ-Ma-Dxp" secondAttribute="bottom" constant="20" id="Exm-Ds-PYg"/>
+                                            <constraint firstAttribute="trailing" secondItem="5tJ-Ma-Dxp" secondAttribute="trailing" constant="10" id="PWJ-RF-2mN"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="wfg-l9-M5m" secondAttribute="bottom" constant="10" id="Wa9-LM-dqI"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="wfg-l9-M5m" secondAttribute="trailing" id="YM2-tM-QYL"/>
-                                            <constraint firstAttribute="trailing" secondItem="5tJ-Ma-Dxp" secondAttribute="trailing" id="bXS-9l-A2m"/>
                                             <constraint firstItem="wfg-l9-M5m" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leadingMargin" id="heA-v0-tQa"/>
-                                            <constraint firstItem="5tJ-Ma-Dxp" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leading" id="nGm-1t-u82"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="creatorLbl" destination="wfg-l9-M5m" id="W5G-yl-Lfx"/>
