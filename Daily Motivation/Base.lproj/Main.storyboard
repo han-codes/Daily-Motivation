@@ -30,9 +30,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="58e-Yc-aJ2">
-                                                    <rect key="frame" x="0.0" y="3" width="375" height="120"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="130"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="120" id="u8W-Yx-IKT"/>
+                                                        <constraint firstAttribute="height" constant="130" id="u8W-Yx-IKT"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Discipline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP0-Rk-H8U">
@@ -131,7 +131,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffx-V5-spy">
-                                                    <rect key="frame" x="10" y="33" width="150" height="118"/>
+                                                    <rect key="frame" x="8" y="30" width="154" height="124"/>
                                                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <wkWebViewConfiguration key="configuration">
                                                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -141,13 +141,13 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="Ffx-V5-spy" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leadingMargin" constant="2" id="1Wd-eB-0pD"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="Ffx-V5-spy" secondAttribute="trailing" constant="2" id="9ge-ES-Adz"/>
-                                            <constraint firstItem="wfg-l9-M5m" firstAttribute="top" secondItem="Ffx-V5-spy" secondAttribute="bottom" constant="5" id="Dpf-pf-c8a"/>
+                                            <constraint firstItem="Ffx-V5-spy" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leadingMargin" id="1Wd-eB-0pD"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Ffx-V5-spy" secondAttribute="trailing" id="9ge-ES-Adz"/>
+                                            <constraint firstItem="wfg-l9-M5m" firstAttribute="top" secondItem="Ffx-V5-spy" secondAttribute="bottom" constant="2" id="Dpf-pf-c8a"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="wfg-l9-M5m" secondAttribute="bottom" constant="10" id="Wa9-LM-dqI"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="wfg-l9-M5m" secondAttribute="trailing" id="YM2-tM-QYL"/>
                                             <constraint firstItem="wfg-l9-M5m" firstAttribute="leading" secondItem="i7R-er-qM9" secondAttribute="leadingMargin" id="heA-v0-tQa"/>
-                                            <constraint firstItem="Ffx-V5-spy" firstAttribute="top" secondItem="i7R-er-qM9" secondAttribute="topMargin" constant="5" id="rdD-Bg-4vM"/>
+                                            <constraint firstItem="Ffx-V5-spy" firstAttribute="top" secondItem="i7R-er-qM9" secondAttribute="topMargin" constant="2" id="rdD-Bg-4vM"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="creatorLbl" destination="wfg-l9-M5m" id="W5G-yl-Lfx"/>

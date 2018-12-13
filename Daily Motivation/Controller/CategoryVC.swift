@@ -18,8 +18,6 @@ class CategoryVC: UIViewController {
         categoryTable.delegate = self
         categoryTable.dataSource = self
     }
-
-
 }
 
 extension CategoryVC: UITableViewDelegate, UITableViewDataSource {

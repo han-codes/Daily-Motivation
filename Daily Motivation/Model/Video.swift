@@ -9,13 +9,11 @@
 import Foundation
 
 struct Video {
-    private(set) public var imageName: String
     private(set) public var creatorText: String
     private(set) public var videoURL: String
     
-    init(creatorText: String, imageName: String, videoURL: String) {
+    init(creatorText: String, videoURL: String) {
         self.creatorText = creatorText
-        self.imageName = imageName
         self.videoURL = videoURL
     }
 }

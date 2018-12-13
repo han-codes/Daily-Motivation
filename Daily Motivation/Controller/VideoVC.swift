@@ -22,17 +22,11 @@ class VideoVC: UIViewController {
         videoCollection.dataSource = self
         
     }
-    
 
     // gets the videos from Datasource
     func initVideos(category: Category) {
         videos = DataService.instance.getVideos(forCategoryTitle: category.title)
         navigationItem.title = category.title
-    }
-    
-    // TODO: Click on video to open up YouTube video
-    @IBAction func videoTapped(_ sender: Any) {
-        
     }
     
 }
@@ -47,19 +41,9 @@ extension VideoVC: UICollectionViewDelegate, UICollectionViewDataSource {
             let video = videos[indexPath.row]
             cell.updateViews(video: video)
             
-            let url = URL(string: "https://www.youtube.com/watch?v=\(video.videoURL)")
-            cell.webView.load(URLRequest(url: url!))
-//            cell.webView.configuration.allowsInlineMediaPlayback = true
-            
-//            let videoURL = NSURL(string: video.videoURL)
-//            let requestObj = URLRequest(url: videoURL! as URL)
-//            cell.webView.load(requestObj)
-            
             return cell
         }
         
         return VideoCell()
     }
-    
-    
 }

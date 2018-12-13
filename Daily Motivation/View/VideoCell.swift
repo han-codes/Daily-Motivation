@@ -15,5 +15,7 @@ class VideoCell: UICollectionViewCell {
     
     func updateViews(video: Video) {
         creatorLbl.text = video.creatorText
+        let url = URL(string: "https://www.youtube.com\(video.videoURL)")
+        webView.load(URLRequest(url: url!))
     }
 }
